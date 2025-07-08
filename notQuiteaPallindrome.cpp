@@ -8,15 +8,16 @@ int main()
     while (t--)
     {
         int n, k;
-        cin >> n, k;
+        cin >> n >> k;
         string s;
         cin >> s;
-        int cnt0, cnt1;
+        int cnt0 = 0;
+        int cnt1 = 0;
         for (int i = 0; i < n; i++)
         {
-            if (s[i] == 0)
+            if (s[i] == '0')
                 cnt0++;
-            if (s[i] == 1)
+            if (s[i] == '1')
                 cnt1++;
         }
         // max good pairs
@@ -27,7 +28,7 @@ int main()
         int mn = max(cnt0, cnt1) - n / 2;
 
         // checking if exactly k good pairs will be possible after rearrangement
-        if (k <= mx && k - mn % 2 == 0 && k >= mn)
+        if (k <= mx && (k - mn) % 2 == 0 && k >= mn)
         {
             cout << "yes " << "\n";
         }
