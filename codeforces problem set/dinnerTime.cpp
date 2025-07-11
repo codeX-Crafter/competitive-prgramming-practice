@@ -24,3 +24,5 @@ int main()
 
     return 0;
 }
+
+// This problem was supposed to be for cyclic arrays, and also required construction, but due to D2A difficulty it was adjusted!
