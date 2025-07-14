@@ -1,0 +1,5 @@
+## Absolute Value
+
+```
+abs(x)
+```
