@@ -18,17 +18,19 @@ int main()
         int index = -1;
         for (int i = 0; i < n; i++)
         {
-            int productleft = 1;
+            int count2left = 0;
             for (int j = 0; j <= i; j++)
             {
-                productleft *= v[j];
+                if (v[j] == 2)
+                    count2left++;
             }
-            int productRight = 1;
+            int count2Right = 0;
             for (int k = i + 1; k < n; k++)
             {
-                productRight *= v[k];
+                if (v[k] == 2)
+                    count2Right++;
             }
-            if (productleft == productRight)
+            if (count2left == count2Right)
             {
                 index = i;
                 break;
