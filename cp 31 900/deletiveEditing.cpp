@@ -13,6 +13,9 @@ int main()
         for (int i = 0; i < S.size(); i++)
         {
             hash[(S[i] - 'A')]++;
+        }for (int i = 0; i < S.size(); i++)
+        {
+            hash[(subS[i] - 'A')]++;
         }
     }
     return 0;

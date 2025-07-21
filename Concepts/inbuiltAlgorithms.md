@@ -4,7 +4,7 @@
 v.sort (v.begin(), v.end());
 ```
 
-The logic is written as Intro sort combining quick sort, heap sort and insertion sort
+The logic is written as Intro sort combining quick sort, heap sort and insertion sort 
 
 ### Custom Sort
 
@@ -58,3 +58,5 @@ reverse(s.begin(), s.end());
 
 cout<< s;
 ```
+
+

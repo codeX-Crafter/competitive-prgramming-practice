@@ -39,9 +39,8 @@ else gcd of a and b.
 
 ```
 #include<bits/stdc++.h>
-#include <iostream>
-#include <algorithm>
 using namespace std;
+
 int main()
 {
     vector<int> numbers = { 12, 15, 18, 21, 24 };

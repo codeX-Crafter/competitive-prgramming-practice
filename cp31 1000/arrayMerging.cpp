@@ -25,15 +25,7 @@ int main()
         int ele = a[0];
         for (int i = 0; i < 2 * n; i++)
         {
-            if (a[i] == ele)
-            {
-                c.push_back(a[i]);
-            }
-            else
-            {
-                c.push_back(b[i]);
-                ele = b[i];
-            }
+           
         }
         for (int i = 0; i < 2 * n; i++)
         {

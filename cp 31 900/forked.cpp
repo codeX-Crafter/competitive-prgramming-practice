@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//incomplete
 int main()
 {
     int t;
@@ -31,3 +31,13 @@ int main()
     }
     return 0;
 }
+
+// kx+a ky+a
+// kx+a ky-a
+// kx+a ky+b
+// kx+a ky-b
+
+// kx-a ky+a
+// kx-a ky-a
+// kx-a ky+b
+// kx-a ky-b
