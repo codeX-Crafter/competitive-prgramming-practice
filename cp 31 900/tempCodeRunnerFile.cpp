@@ -1,1 +1,3 @@
-sums[n] - sums[k]
+if (a % 2 == b % 2)
+            {
+            }
