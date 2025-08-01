@@ -2,8 +2,8 @@
 
 ## Types :
 
-## 1) Fractional - greedy
+### 1) Fractional - greedy
 
-## 2) 0-1 - dp
+### 2) 0-1 - dp
 
-## 3) Unbounded
+### 3) Unbounded
