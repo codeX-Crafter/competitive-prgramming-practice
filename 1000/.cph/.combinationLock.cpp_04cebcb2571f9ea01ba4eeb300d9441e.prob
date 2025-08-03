@@ -1,1 +1,0 @@
-{"name":"Local: combinationLock","url":"c:\\Users\\harsh\\OneDrive\\Desktop\\cp\\1000\\combinationLock.cpp","tests":[{"id":1753788744741,"input":"3\n4\n5\n3","output":"-1\n4 1 3 5 2\n1 3 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\harsh\\OneDrive\\Desktop\\cp\\1000\\combinationLock.cpp","group":"local","local":true}

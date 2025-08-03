@@ -1,1 +1,0 @@
-{"name":"Local: minimiseSum","url":"c:\\Users\\harsh\\OneDrive\\Desktop\\cp\\1000\\minimiseSum.cpp","tests":[{"id":1753296658647,"input":"3\n2\n1 2\n3\n1 2 3\n4\n3 0 2 3\n","output":"2\n2\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\harsh\\OneDrive\\Desktop\\cp\\1000\\minimiseSum.cpp","group":"local","local":true}
