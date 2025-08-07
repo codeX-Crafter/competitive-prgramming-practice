@@ -43,3 +43,7 @@ bool is_prime(int x) {
     return true;
 }
 ```
+
+## MEX
+
+Smallest non-negative integer that is not present in the array
