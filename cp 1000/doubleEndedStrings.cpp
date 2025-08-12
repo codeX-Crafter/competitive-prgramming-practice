@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-// yeh question was of longest common substring
+// yeh question was of length of longest common substring
 int main()
 {
     int t;
