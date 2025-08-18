@@ -26,7 +26,7 @@ This won't work for x==0
 ```
 bool isPowerOf2(int x){
 
-    return x && !( x & ( x - 1 ));
+    return n > 0 && (n & (n - 1)) == 0;
 
 }
 ```
