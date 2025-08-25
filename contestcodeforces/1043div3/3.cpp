@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-
+// yeh wala C1 h greedy approach tha
 long long powEr(int base, int exp)
 {
     long long res = 1;
@@ -28,10 +28,8 @@ signed main()
     {
         int n;
         cin >> n;
-        int k;
-        cin >> k;
         int ans = 0;
-        int deals = 0;
+
         while (n > 0)
         {
             int power = 0;
@@ -41,19 +39,7 @@ signed main()
                 power++;
                 p = p * 3;
             }
-
             int d = n / p;
-            if (d >= k)
-            {
-                k -= d;
-            }
-            else
-            {
-                d = k;
-            }
-
-            // deals += d;
-
             ans += (d * (mulltiply(power)));
             n -= (d * p);
         }
@@ -61,6 +47,9 @@ signed main()
     }
     return 0;
 }
+
+
+//C2 approach , editorial m binary search use kra h
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -92,8 +81,10 @@ signed main()
 //     {
 //         int n;
 //         cin >> n;
+//         int k;
+//         cin >> k;
 //         int ans = 0;
-
+//         int deals = 0;
 //         while (n > 0)
 //         {
 //             int power = 0;
@@ -103,7 +94,19 @@ signed main()
 //                 power++;
 //                 p = p * 3;
 //             }
+
 //             int d = n / p;
+//             if (d >= k)
+//             {
+//                 k -= d;
+//             }
+//             else
+//             {
+//                 d = k;
+//             }
+
+//             // deals += d;
+
 //             ans += (d * (mulltiply(power)));
 //             n -= (d * p);
 //         }
@@ -111,3 +114,4 @@ signed main()
 //     }
 //     return 0;
 // }
+

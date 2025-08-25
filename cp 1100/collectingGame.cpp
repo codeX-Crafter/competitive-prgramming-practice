@@ -49,7 +49,6 @@ signed main()
                     }
                     else
                     {
-
                         // nxt++;
                         break;
                     }

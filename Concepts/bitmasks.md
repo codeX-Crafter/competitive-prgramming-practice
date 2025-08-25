@@ -18,6 +18,29 @@
 Signed uses two’s complement representation → half the values represent negatives.
 Unsigned treats all bit patterns as positive integers.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## XOR calculations
 
 This one gave a TLE because obviously it has a linear time complexity so we have another way to calculate XOR in constant tc given that the numbers are 0 to n
