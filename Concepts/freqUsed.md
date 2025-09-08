@@ -47,3 +47,13 @@ bool is_prime(int x) {
 ## MEX
 
 Smallest non-negative integer that is not present in the array
+
+## Double
+
+```
+// bhai I usually use this way to compute such values but it gave precision error so replaced this with...
+// int req = ceil(gap[i] / double(x));
+
+// this
+int req = (gap[i] + x - 1) / x;
+```
