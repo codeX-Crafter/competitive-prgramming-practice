@@ -1,76 +1,61 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
 
-signed main()
+int main()
 {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     int t;
     cin >> t;
     while (t--)
     {
         int n;
         cin >> n;
-        vector<pair<int, int>> v(n);
-        // map<int, int> mpp;
-        bool possible = true;
+        vector<int> a(n);
+        for (int i = 0; i < n; i++)
+            cin >> a[i];
+
+        vector<vector<int>> FRQ(n + 1);
         for (int i = 0; i < n; i++)
         {
-            cin >> v[i].first;
-            v[i].second = i;
+            FRQ[a[i]].push_back(i); // store indices
         }
 
-        sort(v.begin(), v.end());
+        vector<int> b(n, 0); // result array
+        int cnt = 1;
+        bool ok = true;
 
-        int ele = v[0].first;
-        int cnt = 0;
-        map<int, int> freq;
-        for (int i = 0; i < n; i++)
+        for (int i = 1; i <= n; i++)
         {
-            if (v[i].first == ele)
+            if (FRQ[i].size() % i != 0)
             {
-                cnt++;
+                cout << -1 << "\n";
+                ok = false;
+                break;
             }
             else
             {
-                if (cnt % ele != 0)
+                int c = 0;
+                while (c < (int)FRQ[i].size())
                 {
-                    possible = false;
-                    break;
+                    for (int v = 0; v < i; v++)
+                    {
+                        b[FRQ[i][c]] = cnt;
+                        c++;
+                    }
+                    cnt++;
                 }
-                else
-                {
-                    freq[ele] = cnt / ele;
-                }
-                cnt = 1;
-                ele = v[i].first;
             }
-        }
-        if (possible && cnt % ele != 0)
-        {
-            possible = false;
         }
 
-        vector<int> ans(n);
-        if (possible)
+        if (ok)
         {
-            int ww = 1;
             for (int i = 0; i < n; i++)
             {
-                for (int j = 1; i <= freq[i]; i++)
-                {
-                    ans[i + j] = ww;
-                }
-                ww++;
+                cout << b[i] << " ";
             }
-            for (int i = 0; i < n; i++)
-            {
-                cout << ans[i] << " ";
-            }
-            cout << endl;
-        }
-        else
-        {
-            cout << "-1\n";
+            cout << "\n";
         }
     }
     return 0;
