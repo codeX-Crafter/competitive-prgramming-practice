@@ -2,16 +2,7 @@
 using namespace std;
 #define int long long
 
-// bool mark(int start, vector<int> &pre, int n)
-// {
-//     for (int i = start; i < n; i++)
-//     {
-//         if (i % start == 0 && pre[i] == 0)
-//         {
-//             pre[i] = start;
-//         }
-//     }
-// }
+// TLE
 
 signed main()
 {
@@ -40,25 +31,25 @@ signed main()
         {
             if (v[i] == -1)
             {
-                // for (int j = i + 1; j <= n; j++)
-                // {
-                //     if (v[j] == -1)
-                //         continue;
+                for (int j = i + 1; j <= n; j++)
+                {
+                    if (v[j] == -1)
+                        continue;
 
-                //     if (v[j] % i == 0)
-                //     {
-                //         if (s[j - 1] == '0')
-                //         {
-                //             ans += i;
-                //             v[j] = -1;
-                //             // cout << ans << endl;
-                //         }
-                //         else
-                //         {
-                //             break;
-                //         }
-                //     }
-                // }
+                    if (v[j] % i == 0)
+                    {
+                        if (s[j - 1] == '0')
+                        {
+                            ans += i;
+                            v[j] = -1;
+                            // cout << ans << endl;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
                 continue;
             }
 

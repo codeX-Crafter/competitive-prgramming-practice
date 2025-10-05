@@ -2,6 +2,7 @@
 using namespace std;
 #define int long long
 
+// this is toh brute solution would obviously work but tle aayega and optimisation kra h
 signed main()
 {
     int t;

@@ -97,6 +97,7 @@ signed main()
         int ans = max(zero, min(gapA, gapB));
         ans = min(ans, possA);
         ans = min(ans, possB);
+
         cout << ans << endl;
     }
     return 0;

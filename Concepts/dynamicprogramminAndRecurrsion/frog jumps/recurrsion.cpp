@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// we are given an array of heights whe height[i] represent height of i+1 th stair
+// we are given an array of heights where height[i] represent height of i+1 th stair
 // if the frog is at ith index it can jump from i to either i+1 or i+2
 // the energy consumed in going to i to j is abs(height[j] - height[i])
+// minimum energy consumed to reach the nth stair
 
 int recur(int index, vector<int> &height)
 {
@@ -23,7 +24,7 @@ int main()
 {
     int n;
     cin >> n;
-    vector<int> height(n);
+    vector<int> height(n + 1);
     for (int i = 0; i < n; i++)
     {
         cin >> height[i];

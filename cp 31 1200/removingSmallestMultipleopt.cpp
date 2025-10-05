@@ -2,16 +2,7 @@
 using namespace std;
 #define int long long
 
-// bool mark(int start, vector<int> &pre, int n)
-// {
-//     for (int i = start; i < n; i++)
-//     {
-//         if (i % start == 0 && pre[i] == 0)
-//         {
-//             pre[i] = start;
-//         }
-//     }
-// }
+// AC
 
 signed main()
 {

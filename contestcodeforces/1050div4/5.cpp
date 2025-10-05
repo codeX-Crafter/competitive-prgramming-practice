@@ -24,7 +24,7 @@ signed main()
         for (auto z : freq)
         {
             if (z.second % k != 0)
-                pos = false;
+                return 0;
         }
     }
     return 0;

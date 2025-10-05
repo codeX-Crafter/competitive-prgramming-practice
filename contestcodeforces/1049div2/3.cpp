@@ -27,7 +27,7 @@ signed main()
             else
                 min += a[i];
         }
-    }
+        }
 
     return 0;
 }

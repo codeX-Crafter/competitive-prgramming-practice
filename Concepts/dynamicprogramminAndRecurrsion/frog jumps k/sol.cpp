@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int recurr(int n, vector<int> height, int k)
+int recurr(int n, vector<int> &height, int k)
 {
     if (n == 0)
     {

@@ -21,6 +21,7 @@ signed main()
         // It removes consecutive duplicates from a range [first, last).
         // But it does not actually erase elements from the container, it just rearranges them so that the unique elements are at the front.
         // It returns an iterator to the new logical end of the unique range.
+
         n = unique(v.begin(), v.end()) - v.begin();
 
         int ans = n;
