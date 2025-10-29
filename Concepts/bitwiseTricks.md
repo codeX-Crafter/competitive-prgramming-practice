@@ -39,12 +39,15 @@ bool isPowerOf2(int x){
 1 << k creates a number with only the k-th bit set.
 
 Example: k = 2 → 00000100 (in binary)
+
+1<< n gives 2 ki power n
+
 ```
 
 ### Check if k-th bit is set:
 
 ```
-X & (1 << k)
+X & (1 << k) 
 
 → Returns non-zero if set, zero otherwise.
 ```

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-
+// recursive method
 int binaryExpo(int a, int b)
 {
     if (b == 0)
