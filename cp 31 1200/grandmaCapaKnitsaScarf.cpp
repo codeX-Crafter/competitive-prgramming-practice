@@ -2,6 +2,8 @@
 using namespace std;
 #define int long long
 
+// naman
+
 signed main()
 {
     int t;
