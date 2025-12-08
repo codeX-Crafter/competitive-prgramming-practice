@@ -5,6 +5,11 @@ using namespace std;
 int z = 1e9 + 7;
 #define MOD z
 
+// State - dp[k] is no of ways to get sum k
+// Transition - dp[k] = sumation of dp[k-i] where i varies from 1 t0 6
+// Base case - dp[0] is 1 kyunki no dice rolls req to construct sum 0
+// Final subproblem - dp[n]
+
 signed main()
 {
     int t = 1;

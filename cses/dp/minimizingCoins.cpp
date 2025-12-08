@@ -4,6 +4,7 @@ using namespace std;
 
 int rec(int sum, int n, vector<int> &v, vector<int> &dp)
 {
+    // base cases
     if (sum < 0)
         return 1e18;
     if (sum == 0)
@@ -16,7 +17,7 @@ int rec(int sum, int n, vector<int> &v, vector<int> &dp)
     {
         int call = rec(sum - v[i], n, v, dp);
         if (call != 1e18)
-            mini = min(mini, (1 + call));
+            mini = min(mini, (1 + call)); // main transition
     }
     return dp[sum] = mini;
 }

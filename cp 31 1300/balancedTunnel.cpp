@@ -10,52 +10,36 @@ signed main()
     {
         int n;
         cin >> n;
-        vector<int> a(n);
-        vector<int> prea(n + 1);
+        map<int, int> mpp;
+        vector<int> c(n + 1);
         vector<int> b(n);
-        vector<int> preb(n + 1);
-        // vector<int> beforeA(n + 1);
-        // vector<int> beforeB(n + 1);
+        vector<int> d(n + 1);
+
         for (int i = 0; i < n; i++)
         {
-            cin >> a[i];
-            prea[a[i]] = i + 1;
+            int x;
+            cin >> x;
+            mpp[x] = i + 1;
         }
-
         for (int i = 0; i < n; i++)
         {
             cin >> b[i];
-            preb[b[i]] = i + 1;
-            // cout << preb[b[i]] << " ";
+            c[mpp[b[i]]] = i;
         }
+        int ans = 0;
+        int maxi = INT_MIN;
 
-        int ans1 = 0;
-        int ans2 = 0;
-        int ans3 = 0;
-        int yo = 0;
-        int yosh = 0;
-        for (int i = 1; i <= n; i++)
+        for (int i = 1; i < n + 1; i++)
         {
-            cout << prea[i] - preb[i] << endl;
-            // yo += (prea[i] - preb[i]);
-            // if (yo <= 0)
-            // {
-            //     yosh = max(yosh, (prea[i] - preb[i]));
-            //     if (yo == 0)
-            //     {
-            //         ans1 = yosh;
-            //     }
-            // }
-            // ans2 = min(ans2, (prea[i] - preb[i]));
-            if (((prea[i] - preb[i])) > 0)
+            // cout << c[i] << " ";
+            if (c[i] < maxi)
             {
-                ans1++;
+                ans++;
             }
+            maxi = max(maxi, c[i]);
         }
-
-        cout << ans1 << endl;
-        // cout << abs(ans2) << endl;
-        // cout << max(ans1, abs(ans2)) << endl;
+        // cout << endl;
+        cout << ans << endl;
     }
     return 0;
 }
