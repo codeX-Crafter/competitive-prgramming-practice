@@ -2,6 +2,8 @@
 using namespace std;
 #define int long long
 
+//O(N sqrt)
+
 signed main()
 {
     int t;

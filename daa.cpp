@@ -2,6 +2,8 @@
 using namespace std;
 #define INF 1e9
 
+// time complexity- O(N^3)
+
 int main()
 {
     int n, m;

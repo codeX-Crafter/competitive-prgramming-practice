@@ -15,7 +15,7 @@ signed main()
             cin >> v[i];
 
         unordered_map<int, int> mp;
-
+        
         // total O(N sqrt(N))
         for (int x : v) // this is O(N)
         {

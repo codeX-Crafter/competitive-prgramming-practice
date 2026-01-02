@@ -1,6 +1,6 @@
 // leetcode network delay times
 
-// O(V+ElogV)
+// O(V + ElogV)
 
 class Solution
 {

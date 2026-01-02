@@ -2,7 +2,13 @@
 using namespace std;
 #define int long long
 
-// naman
+// p a p i c i p a p 
+
+// a b c a a c a b 
+// 2
+
+// k h y y h h y h k y
+ 
 
 signed main()
 {
