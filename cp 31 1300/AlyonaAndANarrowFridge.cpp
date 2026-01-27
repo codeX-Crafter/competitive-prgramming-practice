@@ -34,11 +34,13 @@ signed main()
 
         int l = 0;
         int r = n;
-        while (l < r)
+        int ans = 0;
+        while (l <= r)
         {
             int mid = (l + r) / 2;
             if (possible(mid, v, h))
             {
+                ans = mid;
                 l = mid + 1;
             }
             else
@@ -47,7 +49,9 @@ signed main()
             }
         }
 
-        cout << r << endl;
+        cout << ans << endl;
     }
     return 0;
 }
+
+// O(n log² n)
