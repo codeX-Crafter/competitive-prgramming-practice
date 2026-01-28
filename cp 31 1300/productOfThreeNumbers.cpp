@@ -2,22 +2,6 @@
 using namespace std;
 #define int long long
 
-int sumOfPowers(long long n)
-{
-    int sum = 0;
-    for (long long i = 2; i * i <= n; i++)
-    {
-        while (n % i == 0)
-        {
-            sum++;
-            n /= i;
-        }
-    }
-    if (n > 1)
-        sum++;
-    return sum;
-}
-
 vector<int> factorize(long long n)
 {
     vector<int> factors;
@@ -118,3 +102,4 @@ signed main()
     }
     return 0;
 }
+

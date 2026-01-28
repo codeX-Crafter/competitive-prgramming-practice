@@ -57,3 +57,8 @@ Smallest non-negative integer that is not present in the array
 // this
 int req = (gap[i] + x - 1) / x;
 ```
+
+
+
+## A question wherein I was to represent the number as the product of three distinct numbers and greater than 1
+![alt text](image-3.png)
